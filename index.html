@@ -59,47 +59,69 @@
             <p class="section-description">Uma coleção dos projetos desenvolvidos durante minha graduação, demonstrando diferentes habilidades e tecnologias aprendidas.</p>
 
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-project-id="project-7">
+                    <img src="images/ARIS_1.png" alt="Sistema ARIS - Regulação Inteligente">
+                    <h3>ARIS - Regulação Inteligente</h3>
+                    <p>Sistema de IA em fase piloto para otimizar a triagem de leitos na Rede Ebserh e HC-UFPE. Como pesquisador e cientista de dados, atuo na estruturação da base de dados, treinamento do modelo de Machine Learning e desenvolvimento da interface do sistema.</p>
+                    <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card" data-project-id="project-1">
                     <img src="images/HASCHATBOT1img.png" alt="Haschatbot">
                     <h3>HASCHATBOT</h3>
                     <p>Chatbot capaz de auxiliar pacientes com Hipertensão Arterial Sistêmica com as suas rotinas, incluindo auxilio para aferir pressão, lembretes para medicamentos e duvidas sobre o tratamento e prontuário.</p>
                     <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project-id="project-2">
                     <img src="images/CTTU-Img.png" alt="CTTU Imagem">
                     <h3>Integração de Dados da CTTU-RECIFE</h3>
-                    <p>Projeto desenvolvido em equipe durante para a disciplina Banco de Dados, para aplicar e comparar os dois pipelines de integração de dados. Para isso utilizamos os ultimos dados disponibilizados pela prefeitura do Recife de multas registradas pela CTTU.</p>
+                    <p>Projeto desenvolvido em equipe para a disciplina Banco de Dados, com o objetivo de aplicar e comparar os dois pipelines de integração de dados. Para isso utilizamos os ultimos dados disponibilizados pela prefeitura do Recife de multas registradas pela CTTU.</p>
                     <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="project-card">
-                    <img src="images/Algoritmos-Estudo.png" alt="Algoritmos de Ordenação">
-                    <h3>Algoritmos de Ordenação</h3>
-                    <p>Repositório com alguns algoritmos de ordenação de vetores desenvolvidos em python para atividades da disciplina de Algoritmos e Estrutura de Dados a fim de estudar o desepenho de cada algoritmo.</p>
+                <div class="project-card" data-project-id="project-9">
+                    <img src="images/LOGS_2.png" alt="Dashboard de Monitoramento de Eventos">
+                    <h3>Análise e Monitoramento de Eventos Corporativos</h3>
+                    <p>Consolidação de dados heterogêneos de diferentes unidades de uma empresa em uma base unificada. O projeto envolveu o tratamento de dados brutos e a criação de análises visuais, incluindo volumetria, heatmaps e evolução temporal, tudo documentado via Jupyter Notebook para garantir reprodutibilidade.</p>
                     <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <div class="project-card">
+
+                <div class="project-card" data-project-id="project-8">
+                    <img src="images/CAPIBA_01.png" alt="CAPIBAFIT - WebApp de Gamificação">
+                    <h3>CAPIBAFIT</h3>
+                    <p>Webapp desenvolvido com React, Node.js e JavaScript para incentivar a prática de atividades físicas em Recife. O sistema gamifica a rotina dos cidadãos, convertendo exercícios e visitas a pontos turísticos na moeda digital "Capiba". Projeto acadêmico em parceria com a Prefeitura do Recife, focado em boas práticas de Engenharia de Software.</p>
+                    <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card" data-project-id="project-4">
                     <img src="images/Bomberman-img.png" alt="Print do Bomberman">
                     <h3>BOMBERMAN Game</h3>
                     <p> Releitura do clássico Bomberman que foi desenvolvido utilizando Python e Pygame, o objetivo era colocar em prática os conhecimentos em Orientação a Objetos estudados na disciplina de Introdução a Programação.</p>
                     <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
                 </div>
-                
-                <div class="project-card">
+
+                <div class="project-card" data-project-id="project-3">
+                    <img src="images/Algoritmos-Estudo.png" alt="Algoritmos de Ordenação">
+                    <h3>Algoritmos de Ordenação</h3>
+                    <p>Repositório com alguns algoritmos de ordenação de vetores desenvolvidos em python para atividades da disciplina de Algoritmos e Estrutura de Dados a fim de estudar o desepenho de cada algoritmo.</p>
+                    <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card" data-project-id="project-5">
                     <img src="images/ColheitaConectada.png" alt="Colheita Conectada - Prototipo">
                     <h3>Colheita-Conectada</h3>
                     <p>Prototipagem de um artefato digital[site/app] para acompanhar a rotina de agricultores familiares inspirado em agricultores do interior Pernambucano. Oferece algumas funcionalidades como interação com comunidade e histórico de safras.</p>
                     <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-project-id="project-6">
                     <img src="images/e.tal.jpeg" alt="Logo e.tal">
                     <h3> e.tal - HackaPride 2024 </h3>
                     <p>Solução tecnológica campeã do HackaPride 2024 com objetivo de apoiar empreendedores lgbts do Brasil. Projeto desenvolvido no Hackaton desenvolvido pela Empresa Jr Citi-UFPE. </p>
                     <a href="#">Ver detalhes <i class="fas fa-arrow-right"></i></a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -112,7 +134,8 @@
             <div class="contact-grid">
                 <div class="contact-form card">
                     <h2>Enviar Mensagem</h2>
-                    <form id="contact-form">
+                    <form id="contact-form" method="POST" action="enviar.php">
+
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Seu nome" required>
                         </div>
@@ -179,6 +202,7 @@
                     <ul id="modal-tech-list">
                         </ul>
                 </div>
+                <a id="modal-project-link" class="btn btn-primary modal-link-btn" href="#" target="_blank" rel="noopener noreferrer">Ver projeto</a>
             </div>
             <div class="project-gallery">
                 <h3>Galeria do Projeto</h3>
